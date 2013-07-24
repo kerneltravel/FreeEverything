@@ -91,11 +91,11 @@
         <Label Content="Size:" HorizontalAlignment="Left" Margin="138,240,0,0" VerticalAlignment="Top" Width="40"/>
         <TextBox Text="{Binding TotalSize, Mode=OneWay}" HorizontalAlignment="Left" Height="23" Margin="183,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
         <Button Content="Delete" HorizontalAlignment="Left" Margin="695,213,0,0" VerticalAlignment="Top" Width="75" Click="Delete_Click"/>
-        <ProgressBar Maximum="100" Minimum="0" Value="{Binding Progress}" IsIndeterminate="False" HorizontalAlignment="Left" Height="20" Margin="434,242,0,0" VerticalAlignment="Top" Width="230"/>
+        <ProgressBar Maximum="100" Minimum="0" Value="1" IsIndeterminate="False" HorizontalAlignment="Left" Height="20" Margin="434,242,0,0" VerticalAlignment="Top" Width="230"/>
         <Button Content="TestProgress" HorizontalAlignment="Left" Margin="503,186,0,0" VerticalAlignment="Top" Width="75" Click="TestProgress_Click"/>
         <Label Content="Time:" HorizontalAlignment="Left" Margin="669,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.447,0.577"/>
-        <TextBox Text="{Binding ElapseTime}" HorizontalAlignment="Left" Height="23" Margin="712,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58"/>
-        <Control Visibility="{Binding TestWait}" HorizontalAlignment="Right" Style="{StaticResource WaitSpinnerStyle}" Width="15" Foreground="Green" RenderTransformOrigin="-18.8,0.584" Margin="0,-90,184,90" />
+        <TextBox Text="1" HorizontalAlignment="Left" Height="23" Margin="712,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58"/>
+        <Control Visibility="{Binding TestWait}" HorizontalAlignment="Right" Style="{StaticResource WaitSpinnerStyle}" Width="15" Foreground="Green" RenderTransformOrigin="-18.8,0.584" Margin="0,-12,192,12" DataContext="{Binding}" IsEnabled="True" />
     </Grid>
 
 

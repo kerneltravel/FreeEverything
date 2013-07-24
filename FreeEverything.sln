@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeEverything", "FreeEverything\FreeEverything.csproj", "{DC74FBC8-0B00-49E9-9D32-3C1CA55238AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeEverythingTest", "FreeEverythingTest\FreeEverythingTest.csproj", "{6D17CFCB-BC7D-4760-870A-DD63B363BE46}"

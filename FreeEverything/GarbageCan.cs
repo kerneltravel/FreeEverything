@@ -131,7 +131,7 @@ namespace FreeEverything
             set
             {
                 m_FilterName = value;
-                m_SelectedFilter.Name = m_FilterName;
+                //m_SelectedFilter.Name = m_FilterName;
                 OnPropertyChanged("FilterList");
                 OnPropertyChanged("SelectedFilter");
             }
@@ -256,7 +256,7 @@ namespace FreeEverything
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
-        private void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        private void OnPropertyChanged(/*[CallerMemberName]*/ string propertyName = null)
         {
             PropertyChangedEventHandler handler = PropertyChanged;
             if (handler != null)
@@ -287,7 +287,7 @@ namespace FreeEverything
                         Task.Factory.StartNew(() => Thread.Sleep(300)).ContinueWith((antecedent) =>
                             {
                                 Progress++;
-                                OnPropertyChanged("Progress");
+                                //OnPropertyChanged("Progress");
                             }, TaskContinuationOptions.AttachedToParent);
                     }
                 }).ContinueWith(t =>
@@ -323,7 +323,7 @@ namespace FreeEverything
         private void updateElapseTime(object sender, EventArgs e)
         {
             ElapseTime = m_StopWatch.Elapsed.TotalSeconds.ToString("F2"); 
-            OnPropertyChanged("ElapseTime");
+            //OnPropertyChanged("ElapseTime");
         }
     }
 }
